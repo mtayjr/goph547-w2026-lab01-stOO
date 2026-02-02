@@ -35,3 +35,8 @@ env/
 # macOS
 # =========================
 .DS_Store
+
+
+# Ignore generated plots and data files
+*.png
+*.mat
