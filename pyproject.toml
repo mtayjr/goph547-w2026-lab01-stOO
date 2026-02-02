@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "goph547lab00"
+name = "goph547lab01"
 version = "0.0.1"
 authors = [
   { name="Omotayo Ojo", email="omotayo.ojo@ucalgary.ca" },
 ]
-description = "A Python package for GOPH 547 Lab 0"
+description = "A Python package for GOPH 547 Lab 1"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
@@ -23,4 +23,10 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/mtayjr/geoph547-w2026-lab00-stOO"
+"Homepage" = "https://github.com/mtayjr/goph547-w2026-lab01-stOO"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
