@@ -2,8 +2,11 @@
 # Python
 # =========================
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
 
 # =========================
 # Packaging / build
@@ -39,4 +42,8 @@ env/
 
 # Ignore generated plots and data files
 *.png
-*.mat
+
+
+# Generated outputs
+*.png
+mass_set_*.
