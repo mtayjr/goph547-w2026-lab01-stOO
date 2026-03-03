@@ -47,3 +47,7 @@ env/
 # Generated outputs
 *.png
 mass_set_*.
+
+# Generated data files
+*.mat
+section7_output.txt
