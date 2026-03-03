@@ -69,7 +69,7 @@ def plot_for_dx(dx, xm, m):
 
     #a 3x2 subplot layout
     fig, axes = plt.subplots(nrows=3, ncols=2, figsize=(10, 12))
-    fig.suptitle(f"Point mass gravity (dx = {dx} m)", fontsize=14)
+    fig.suptitle(f"Point mass gravity (dx = {dx} m)", fontsize=14, y=0.98)
 
     #Loop through each row (each z)
     for row, z in enumerate(zs):
@@ -77,7 +77,7 @@ def plot_for_dx(dx, xm, m):
         #Left column: U
         axU = axes[row, 0]
         cU = axU.contourf(X, Y, U_maps[row], levels=30,
-                          vmin=Umin, vmax=Umax, cmap="viridis")
+                          vmin=Umin, vmax=Umax, cmap="viridis_r")
         axU.plot(X, Y, "xk", markersize=2)  # show grid points
         axU.set_title(f"U at z={z} m")
         axU.set_xlabel("x (m)")
@@ -87,7 +87,7 @@ def plot_for_dx(dx, xm, m):
         #Right column: gz
         axg = axes[row, 1]
         cg = axg.contourf(X, Y, gz_maps[row], levels=30,
-                          vmin=gzmin, vmax=gzmax, cmap="viridis")
+                          vmin=gzmin, vmax=gzmax, cmap="viridis_r")
         axg.plot(X, Y, "xk", markersize=2)
         axg.set_title(f"gz (down) at z={z} m")
         axg.set_xlabel("x (m)")
